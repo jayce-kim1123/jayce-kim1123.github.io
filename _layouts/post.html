@@ -1,0 +1,44 @@
+---
+layout: default
+---
+<article>
+  <a class="back-link" href="{{ '/' | relative_url }}">&larr; 목록으로</a>
+  <header class="post-header">
+    <div class="post-meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y년 %-m월 %-d일" }}</time>
+      {% assign words = content | number_of_words %}
+      <span>{{ words | divided_by: 350 | at_least: 1 }}분 분량</span>
+      {% if page.tags.size > 0 %}
+        <span class="post-tags">
+          {% for tag in page.tags %}<a class="tag-pill" href="{{ '/tags/' | relative_url }}#{{ tag | slugify }}">{{ tag }}</a>{% endfor %}
+        </span>
+      {% endif %}
+    </div>
+    <h1 class="post-title">{{ page.title }}</h1>
+  </header>
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+
+  <footer class="post-footer">
+    {% assign has_prev = page.previous.title %}
+    {% assign has_next = page.next.title %}
+    {% if has_prev or has_next %}
+    <nav class="post-nav" aria-label="이전/다음 글">
+      {% if page.previous.title %}
+      <div class="post-nav-link prev">
+        <span class="post-nav-label">이전 글</span>
+        <a href="{{ page.previous.url | relative_url }}">{{ page.previous.title }}</a>
+      </div>
+      {% endif %}
+      {% if page.next.title %}
+      <div class="post-nav-link next">
+        <span class="post-nav-label">다음 글</span>
+        <a href="{{ page.next.url | relative_url }}">{{ page.next.title }}</a>
+      </div>
+      {% endif %}
+    </nav>
+    {% endif %}
+  </footer>
+</article>

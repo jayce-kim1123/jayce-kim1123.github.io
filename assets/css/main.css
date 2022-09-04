@@ -18,6 +18,7 @@
     "Liberation Mono", monospace;
 
   --measure: 40rem;
+  --measure-wide: 76rem;
   --space-1: 0.5rem;
   --space-2: 1rem;
   --space-3: 1.75rem;
@@ -141,6 +142,7 @@ th, td { border: 1px solid var(--border); padding: 0.5em 0.75em; text-align: lef
   margin: 0 auto;
   padding: 0 var(--space-2);
 }
+.wrap-home { max-width: var(--measure-wide); }
 
 .site-header {
   padding: var(--space-4) 0 var(--space-3);
@@ -189,37 +191,65 @@ main { padding-bottom: var(--space-5); }
 }
 .page-intro p { margin: 0.3em 0 0; }
 
-.post-list {
+.post-grid {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15.5rem, 1fr));
+  gap: var(--space-3);
+  align-items: start;
 }
-.post-list-item {
-  padding: var(--space-3) 0;
-  border-top: 1px solid var(--border);
+
+.post-card {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: var(--space-2) var(--space-2) var(--space-2);
+  display: flex;
+  flex-direction: column;
+  transition: border-color 0.15s ease, transform 0.15s ease;
 }
-.post-list-item:first-child { border-top: none; }
+.post-card:hover {
+  border-color: var(--text-muted);
+  transform: translateY(-2px);
+}
+
+.post-card-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  flex: 1;
+}
+.post-card-link:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
 
 .post-list-date {
   display: block;
-  font-size: 0.82rem;
+  font-size: 0.8rem;
   color: var(--text-faint);
   font-variant-numeric: tabular-nums;
-  margin-bottom: 0.3em;
+  margin-bottom: 0.6em;
 }
-.post-list-title {
+.post-card-title {
   margin: 0;
-  font-size: 1.15rem;
+  font-size: 1.08rem;
+  line-height: 1.4;
 }
-.post-list-title a { text-decoration: none; }
-.post-list-title a:hover { text-decoration: underline; text-decoration-color: var(--link-underline); }
-.post-list-excerpt {
-  margin: 0.5em 0 0;
+.post-card:hover .post-card-title {
+  text-decoration: underline;
+  text-decoration-color: var(--link-underline);
+}
+.post-card-excerpt {
+  margin: 0.6em 0 0;
   color: var(--text-muted);
-  font-size: 0.95rem;
+  font-size: 0.9rem;
+  line-height: 1.6;
 }
 .post-tags {
-  margin-top: 0.6em;
+  margin-top: var(--space-2);
   display: flex;
   gap: 0.4em;
   flex-wrap: wrap;

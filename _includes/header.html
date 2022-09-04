@@ -1,5 +1,5 @@
 <header class="site-header">
-  <div class="wrap">
+  <div class="wrap wrap-{{ page.layout }}">
     <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
     <nav class="site-nav" aria-label="주요 메뉴">
       <a href="{{ '/' | relative_url }}"{% if page.url == '/' %} aria-current="page"{% endif %}>글</a>

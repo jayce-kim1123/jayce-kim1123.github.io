@@ -1,6 +1,6 @@
 ---
 title: "개인정보 마스킹 규칙을 정했는데, 2글자짜리 이름은 어떻게 하나"
-date: 2023-04-05 21:27:43 +0900
+date: 2023-04-05 18:48:00 +0900
 categories: [backend, security]
 tags: [privacy, django, edge-case]
 ---

@@ -1,6 +1,6 @@
 ---
 title: "CORS 미들웨어 순서를 바꿨더니 CSRF 검증이 통째로 빠졌다"
-date: 2023-05-03 23:56:37 +0900
+date: 2023-05-03 19:34:00 +0900
 categories: [backend, security]
 tags: [django, cors, csrf, middleware]
 ---

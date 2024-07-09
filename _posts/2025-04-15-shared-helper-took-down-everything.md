@@ -1,6 +1,6 @@
 ---
 title: "공용 함수 하나가 서비스 전체를 내려버린 날"
-date: 2025-04-15 21:23:53 +0900
+date: 2025-04-15 14:05:00 +0900
 categories: [incident, backend]
 tags: [postmortem, database, django]
 ---

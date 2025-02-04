@@ -1,6 +1,6 @@
 ---
 title: "고객사용 API를 만들며 정해야 했던 것들"
-date: 2026-05-18 21:05:45 +0900
+date: 2026-05-18 12:34:00 +0900
 categories: [backend]
 tags: [django, rest-framework, api-design, redis]
 ---

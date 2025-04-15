@@ -1,6 +1,6 @@
 ---
 title: "문의 데이터 검색에 Elasticsearch를 처음 도입한 이야기"
-date: 2023-09-05 20:10:02 +0900
+date: 2023-09-05 16:34:00 +0900
 categories: [backend, database]
 tags: [elasticsearch, mysql, mariadb, pt-osc, rds, migration]
 ---

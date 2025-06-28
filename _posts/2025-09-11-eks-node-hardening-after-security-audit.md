@@ -1,6 +1,6 @@
 ---
 title: "보안 점검 후속 조치, EKS 노드는 재부팅되면 원상복구된다"
-date: 2025-09-11 20:07:56 +0900
+date: 2025-09-11 14:21:00 +0900
 categories: [infra, security]
 tags: [eks, aws, ssm, security]
 ---

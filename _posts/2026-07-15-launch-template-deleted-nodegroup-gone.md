@@ -1,6 +1,6 @@
 ---
 title: "시작 템플릿 하나가 삭제됐을 뿐인데 노드그룹이 전부 사라졌다"
-date: 2026-07-15 20:45:52 +0900
+date: 2026-07-15 14:35:00 +0900
 categories: [incident, infra]
 tags: [postmortem, eks, aws, kubernetes]
 ---

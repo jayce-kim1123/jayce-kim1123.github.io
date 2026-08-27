@@ -3,7 +3,7 @@ layout: default
 ---
 <div class="page-intro">
   <h1 class="visually-hidden">{{ site.title }}</h1>
-  <p>{{ site.description }} &middot; 총 {{ site.posts.size }}개의 글</p>
+  <p>AI와 함께한 작업을 AI가 제 글 작성 스타일을 모방하여 작성한 글들입니다. 저는 지시와 검수만 합니다.</p>
 </div>
 
 {% assign pinned_posts = site.posts | where_exp: "p", "p.pin == true" %}

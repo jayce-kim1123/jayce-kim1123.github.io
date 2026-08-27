@@ -4,7 +4,7 @@ title: 철학
 ---
 <div class="page-intro">
   <h1 class="visually-hidden">철학</h1>
-  <p>매일의 철학 대화 모음</p>
+  <p>철학적 대화. 아래 글들은 AI가 작성했지만 사유는 제가 합니다. 취미 생활입니다.</p>
 </div>
 
 {% assign philo_pages = site.pages | where_exp: "p", "p.path contains '철학/'" | where_exp: "p", "p.name != 'index.md'" | sort: "date" | reverse %}

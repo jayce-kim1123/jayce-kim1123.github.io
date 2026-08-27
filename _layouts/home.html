@@ -6,12 +6,17 @@ layout: default
   <p>{{ site.description }} &middot; 총 {{ site.posts.size }}개의 글</p>
 </div>
 
-{% if site.posts.size > 0 %}
+{% assign pinned_posts = site.posts | where_exp: "p", "p.pin == true" %}
+{% assign other_posts = site.posts | where_exp: "p", "p.pin != true" %}
+{% assign all_posts = pinned_posts | concat: other_posts %}
+{% if all_posts.size > 0 %}
 <ul class="post-grid">
-  {% for post in site.posts %}
-  <li class="post-card">
+  {% for post in all_posts %}
+  <li class="post-card{% if post.pin %} post-card-pinned{% endif %}">
     <a class="post-card-link" href="{{ post.url | relative_url }}">
-      <time class="post-list-date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y년 %-m월 %-d일" }}</time>
+      <time class="post-list-date" datetime="{{ post.date | date_to_xmlschema }}">
+        {% if post.pin %}<span class="pin-badge">📌 고정</span>{% endif %}{{ post.date | date: "%Y년 %-m월 %-d일" }}
+      </time>
       <h2 class="post-card-title">{{ post.title }}</h2>
       {% if post.excerpt %}
       <p class="post-card-excerpt">{{ post.excerpt | strip_html | truncatewords: 22 }}</p>

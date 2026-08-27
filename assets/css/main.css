@@ -213,6 +213,25 @@ main { padding-bottom: var(--space-5); }
   border-color: var(--text-muted);
   transform: translateY(-2px);
 }
+.post-card-pinned {
+  border-color: var(--text-faint);
+  background: var(--bg-raised);
+}
+
+.pin-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3em;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.1em 0.6em;
+  margin-right: 0.6em;
+  letter-spacing: 0.02em;
+}
 
 .post-card-link {
   display: block;

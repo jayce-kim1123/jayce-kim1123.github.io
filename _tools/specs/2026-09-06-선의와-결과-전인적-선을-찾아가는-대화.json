@@ -1,0 +1,49 @@
+{
+ "title": "선의 + 결과",
+ "elements": [
+  {
+   "type": "ellipse",
+   "x": 140,
+   "y": 190,
+   "w": 560,
+   "h": 350
+  },
+  {
+   "type": "ellipse",
+   "x": 500,
+   "y": 190,
+   "w": 560,
+   "h": 350
+  },
+  {
+   "type": "text",
+   "text": "선의",
+   "x": 160,
+   "y": 330,
+   "w": 320,
+   "h": 90,
+   "align": "center",
+   "size": 88
+  },
+  {
+   "type": "text",
+   "text": "좋은 결과",
+   "x": 720,
+   "y": 330,
+   "w": 320,
+   "h": 90,
+   "align": "center",
+   "size": 88
+  },
+  {
+   "type": "text",
+   "text": "전인적\n선",
+   "x": 600,
+   "y": 290,
+   "size": 62,
+   "align": "center",
+   "hl": "yellow"
+  }
+ ],
+ "caption": "둘 다 갖춰져야 완벽한 선"
+}

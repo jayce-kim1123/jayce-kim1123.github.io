@@ -1,0 +1,15 @@
+{
+ "template": "hub",
+ "title": "전인적 선",
+ "center": {
+  "text": "전인적 선",
+  "hl": "yellow"
+ },
+ "nodes": [
+  "의도",
+  "행위",
+  "결과"
+ ],
+ "arrows": false,
+ "caption": "하나라도 어긋나면 완전한 선이 아니다"
+}

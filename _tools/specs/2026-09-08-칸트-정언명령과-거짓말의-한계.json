@@ -1,0 +1,16 @@
+{
+ "template": "versus",
+ "title": "정언명령",
+ "left": {
+  "title": "예외없음",
+  "hl": "pink",
+  "items": ["살인자에게도", "거짓말금지"]
+ },
+ "right": {
+  "title": "영역나누기",
+  "hl": "yellow",
+  "items": ["가정 국가", "교집합만 공유"]
+ },
+ "vs": "vs",
+ "caption": "교집합도 유동적"
+}

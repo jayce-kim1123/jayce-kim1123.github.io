@@ -1,0 +1,16 @@
+{
+ "template": "versus",
+ "title": "테세우스 배",
+ "left": {
+  "title": "물리적",
+  "hl": "pink",
+  "items": ["순간마다", "다르다"]
+ },
+ "right": {
+  "title": "역사적",
+  "hl": "yellow",
+  "items": ["세계선 전체", "같다"]
+ },
+ "vs": "vs",
+ "caption": "동일성은 기준 따라 다르다"
+}

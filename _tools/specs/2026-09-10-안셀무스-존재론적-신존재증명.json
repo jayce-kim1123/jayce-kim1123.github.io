@@ -1,0 +1,16 @@
+{
+ "template": "versus",
+ "title": "존재론적 논증",
+ "left": {
+  "title": "안셀무스",
+  "hl": "yellow",
+  "items": ["생각속 신", "정의가 곧 존재"]
+ },
+ "right": {
+  "title": "가우닐로",
+  "hl": "pink",
+  "items": ["완벽한 섬", "섬도 존재해야"]
+ },
+ "vs": "vs",
+ "caption": "신만 예외일 수 없다"
+}

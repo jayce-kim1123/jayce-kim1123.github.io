@@ -1,0 +1,19 @@
+{%- comment -%}
+  글 파일명과 같은 이름의 /assets/img/philosophy/<파일명>.jpg 를 썸네일로 쓴다.
+  front matter에 image: 가 있으면 그것을 우선한다. 이미지가 없으면 아무것도 출력하지 않는다.
+  사용: {% include philo-thumb.html p=post class="post-card-thumb" %}
+{%- endcomment -%}
+{%- assign _has = false -%}
+{%- assign _src = '' -%}
+{%- if include.p.image -%}
+  {%- assign _src = include.p.image -%}
+  {%- assign _has = true -%}
+{%- else -%}
+  {%- assign _base = include.p.name | remove: '.md' -%}
+  {%- assign _src = '/assets/img/philosophy/' | append: _base | append: '.jpg' -%}
+  {%- assign _hit = site.static_files | where: 'path', _src | first -%}
+  {%- if _hit -%}{%- assign _has = true -%}{%- endif -%}
+{%- endif -%}
+{%- if _has -%}
+<img class="{{ include.class | default: 'post-card-thumb' }}" src="{{ _src | relative_url }}" alt="{{ include.alt | escape }}" width="1200" height="675" loading="lazy">
+{%- endif -%}

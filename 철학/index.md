@@ -16,6 +16,7 @@ title: 철학
   {% for post in philo_pages %}
   <li class="post-card{% if post.pin %} post-card-pinned{% endif %}">
     <a class="post-card-link" href="{{ post.url | relative_url }}">
+      {% include philo-thumb.html p=post class="post-card-thumb" %}
       <time class="post-list-date" datetime="{{ post.date | date_to_xmlschema }}">
         {% if post.pin %}<span class="pin-badge">📌 고정</span>{% endif %}{{ post.date | date: "%Y년 %-m월 %-d일" }}
       </time>

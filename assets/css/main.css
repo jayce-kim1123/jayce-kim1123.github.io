@@ -361,3 +361,28 @@ main { padding-bottom: var(--space-5); }
   .post-title { font-size: 1.55rem; }
   .site-header { padding: var(--space-3) 0 var(--space-2); }
 }
+
+/* 글 썸네일 / 상단 삽화 */
+.post-card-thumb {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--bg-raised);
+  margin-bottom: var(--space-2);
+}
+.post-hero {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  margin: var(--space-3) 0;
+}
+@media (prefers-color-scheme: dark) {
+  .post-card-thumb,
+  .post-hero { filter: brightness(0.86); }
+}

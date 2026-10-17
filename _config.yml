@@ -25,3 +25,7 @@ defaults:
       type: pages
     values:
       layout: page
+  - scope:
+      path: "철학"
+    values:
+      layout: post

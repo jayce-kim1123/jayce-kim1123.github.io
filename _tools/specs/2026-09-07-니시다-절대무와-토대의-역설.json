@@ -1,0 +1,15 @@
+{
+ "template": "hub",
+ "title": "절대무",
+ "center": {
+  "text": "절대무",
+  "hl": "yellow"
+ },
+ "nodes": [
+  "자아",
+  "세계",
+  "종교"
+ ],
+ "arrows": true,
+ "caption": "말할 수 없다는 것이 설명이 될까?"
+}

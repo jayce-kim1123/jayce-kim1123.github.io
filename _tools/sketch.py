@@ -348,6 +348,8 @@ def node(sk, n, x, y, w, h, shape='rect'):
         sk.ellipse(x + w / 2.0, y + h / 2.0, w / 2.0, h / 2.0)
     else:
         sk.rect(x, y, w, h)
+    if not n.get('text'):
+        return
     sub = n.get('sub')
     inner_w = w - 36 if shape == 'rect' else w * 0.72
     inner_h = h - 24 if shape == 'rect' else h * 0.66

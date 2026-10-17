@@ -1,5 +1,6 @@
 ---
 layout: default
+wrap: home
 title: 철학
 ---
 <div class="page-intro">

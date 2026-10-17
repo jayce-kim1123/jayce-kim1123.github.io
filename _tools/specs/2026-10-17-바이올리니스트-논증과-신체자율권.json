@@ -1,0 +1,16 @@
+{
+ "template": "versus",
+ "title": "생명권 vs 몸",
+ "left": {
+  "title": "생명권",
+  "hl": "yellow",
+  "items": ["살아야 한다", "책임은 있다"]
+ },
+ "right": {
+  "title": "신체사용권",
+  "hl": "pink",
+  "items": ["내 몸은 내 것", "강제는 안돼"]
+ },
+ "vs": "=?",
+ "caption": "둘은 같지 않다"
+}
